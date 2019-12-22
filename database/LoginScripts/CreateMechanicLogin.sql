@@ -1,0 +1,12 @@
+USE [master]
+GO
+CREATE LOGIN [Mechanic] WITH PASSWORD=N'Mechanic1', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
+GO
+USE [MiRas]
+GO
+CREATE USER [Mechanic] FOR LOGIN [Mechanic]
+GO
+USE [MiRas]
+GO
+ALTER ROLE [Mechanic_role] ADD MEMBER [Mechanic]
+GO
