@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/mssql/server:2017-latest
+
+	ENV ACCEPT_EULA=Y
+        ENV SA_PASSWORD=Password!
+        ENV MSSQL_PID=Developer
+        ENV MSSQL_TCP_PORT=1433
+
+	WORKDIR /src
+
+	COPY MiRas.bak /var/opt/mssql/backup/
+
+	RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | grep -q "Service Broker manager has started" &&  /opt/mssql-tools/bin/sqlcmd -S127.0.0.1 -Usa -PPassword!  -Q"RESTORE DATABASE MiRas FROM DISK = '/var/opt/mssql/backup/MiRas.bak' WITH MOVE 'MiRas' TO '/var/opt/mssql/data/MiRas.mdf', MOVE 'MiRas_Log' TO '/var/opt/mssql/data/MiRas.ldf'" 
