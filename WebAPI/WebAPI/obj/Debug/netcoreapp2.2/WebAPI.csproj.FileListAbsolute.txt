@@ -23,3 +23,6 @@ F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\bin\Debug\
 F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\dockerangular\tslint.json
 F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\package-lock.json
 F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
+F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\dockerangular\src\tsconfig.app.json
+F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\dockerangular\src\tsconfig.spec.json
+F:\Repozytorium\Semestr V\Bazy Danych 2\CoreApiAngular2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\dockerangular\src\tslint.json
